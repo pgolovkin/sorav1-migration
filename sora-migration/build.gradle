@@ -12,12 +12,6 @@ repositories {
     maven {
         url "https://jitpack.io"
     }
-    maven {
-        url "https://nexus.iroha.tech/repository/maven-capital/"
-    }
-    flatDir {
-        dirs 'libs'
-    }
 }
 
 dependencies {
