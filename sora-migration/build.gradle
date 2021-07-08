@@ -3,7 +3,7 @@ plugins {
 }
 
 group 'org.sora.sora1-migration'
-version '1.0-SNAPSHOT'
+version '1.0.0'
 
 repositories {
     maven { url "https://nexus.iroha.tech/repository/maven-soramitsu/" }
