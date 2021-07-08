@@ -1,0 +1,4 @@
+# Project exclude paths
+/sora-migration/.gradle/
+/sora-migration/build/
+/sora-migration/build/classes/java/main/

@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group 'org.sora.sora1-migration'
+version '1.0-SNAPSHOT'
+
+repositories {
+    maven { url "https://nexus.iroha.tech/repository/maven-soramitsu/" }
+    google()
+    jcenter()
+    maven {
+        url "https://jitpack.io"
+    }
+    maven {
+        url "https://nexus.iroha.tech/repository/maven-capital/"
+    }
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    compile "com.github.hyperledger.iroha-java:client:5.1.2"
+}
+
+test {
+    useJUnitPlatform()
+}
