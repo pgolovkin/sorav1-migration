@@ -13,7 +13,7 @@ cd sora-migration
 cd build/libs
 java -jar sora-migration-1.0.0 jar "<mnemonic>"
 ```
-<mnemonic> should be replaced with SORAv1 mnemonic
+The `<mnemonic>` should be replaced with SORAv1 mnemonic
 
 The example of the output
 ```shell
