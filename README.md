@@ -1,5 +1,5 @@
 # How it works
-The code generates the SORAv1 address, public key and migration signature based on 12 words mnemonic.
+The code generates the SORAv1 address, public key and migration signature based on 12 words mnemonic or private key.
 The signature is ecnrypt(SHA3(SORAv1 address + SORAv1 public key)).
 
 # How to build
@@ -14,6 +14,14 @@ cd build/libs
 java -jar sora-migration-1.0.0 jar "<mnemonic>"
 ```
 The `<mnemonic>` should be replaced with SORAv1 mnemonic
+
+Or 
+```shell
+cd build/libs
+java -jar sora-migration-1.0.0 jar <private key>
+```
+The `<private key>` should be replaced with SORAv1 private key without `0x` in the beginning.
+
 
 The example of the output
 ```shell
