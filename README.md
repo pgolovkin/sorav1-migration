@@ -13,7 +13,8 @@ cd sora-migration
 cd build/libs
 java -jar sora-migration-1.0.0 jar "<mnemonic>" <iroha_address>
 ```
-The `<mnemonic>` should be replaced with SORAv1 mnemonic
+The `<mnemonic>` should be replaced with SORAv1 mnemonic.
+
 The `<iroha_address>` is optional. This parameter should be used if address doesn't match `did_*******@sora` format. The example is `sora@sora`
 
 Or 
@@ -22,6 +23,7 @@ cd build/libs
 java -jar sora-migration-1.0.0 jar <private key> <iroha_address>
 ```
 The `<private key>` should be replaced with SORAv1 private key without `0x` in the beginning.
+
 The `<iroha_address>` is optional. This parameter should be used if address doesn't match `did_*******@sora` format. The example is `sora@sora`
 
 The example of the output
