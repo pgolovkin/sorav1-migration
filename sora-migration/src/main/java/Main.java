@@ -20,7 +20,12 @@ public class Main {
         }
         KeyPair keys = new Ed25519Sha3().generateKeypair(seed);
         String did = "did:sora:" + Hex.toHexString(keys.getPublic().getEncoded()).substring(0, 20);
-        String irohaAddress = did.replace(":", "_") + "@sora";
+        String irohaAddress;
+        if (args.length > 1) {
+            irohaAddress = args[1];
+        } else {
+            irohaAddress = did.replace(":", "_") + "@sora";
+        }
         System.out.println("iroha_address " + irohaAddress);
         System.out.println("iroha_public_key " + Hex.toHexString(keys.getPublic().getEncoded()));
         String message = irohaAddress + Hex.toHexString(keys.getPublic().getEncoded());
